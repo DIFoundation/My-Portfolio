@@ -104,3 +104,7 @@ function openPopup(id) {
 function closePopup(id) {
   document.getElementById(id).style.display = "none";
 }
+// Get the current year
+const currentYear = new Date().getFullYear();
+// Set the text content of the element with id "currentYear" to the current
+document.getElementById("CurrentYear").textContent = currentYear;
