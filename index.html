@@ -37,7 +37,7 @@
       <div class="social-media">
         <a href="https://github.com/DIFoundation/" target="_blank"><i class="fa-brands fa-github"></i></a>
         <a href="https://x.com/Real_Adeniran/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-        
+        <a href="mailto:adeniranibrahim65@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
         <a href="https://www.linkedin.com/in/adeniran-ibrahim-adewale/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
       </div>
 
@@ -54,7 +54,7 @@
   <!-- ###########this is about me##### -->
   <section class="about" id="about">
     <div class="about-img">
-      <img src="images/GD.jpg" alt="About Image">
+      <img src="images/developer.jpg" alt="About Image">
     </div>
 
     <div class="about-content">
@@ -82,36 +82,88 @@
       <div class="services-box">
         <i class="fa-solid fa-code"></i>
         <h3>Web Development</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi temporibus nisi aperiam aliquid ex pariatur ea placeat asperiores deleniti omnis.</p>
-        <a href="#" class="btn">Read more</a>
+        <p>Crafting modern, responsive, and high-performance websites using cutting-edge technologies.</p>
+        <a href="javascript:void(0);" class="btn" onclick="openPopup('popup1')">Read more</a>
       </div>
-
+    
       <div class="services-box">
-        <i class="fa-solid fa-palette"></i>
+        <i class="fa-solid fa-list-check"></i>
         <h3>Product Management</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi temporibus nisi aperiam aliquid ex pariatur ea placeat asperiores deleniti omnis.</p>
-        <a href="#" class="btn">Read more</a>
+        <p>Transforming ideas into successful products through strategic planning and execution.</p>
+        <a href="javascript:void(0);" class="btn" onclick="openPopup('popup2')">Read more</a>
       </div>
-
+    
       <div class="services-box">
-        <i class="fa-solid fa-dna"></i>
+        <i class="fa-solid fa-headset"></i>
         <h3>Virtual Assistance</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi temporibus nisi aperiam aliquid ex pariatur ea placeat asperiores deleniti omnis.</p>
-        <a href="#" class="btn">Read more</a>
+        <p>Efficient remote assistance to streamline business operations and enhance productivity.</p>
+        <a href="javascript:void(0);" class="btn" onclick="openPopup('popup3')">Read more</a>
       </div>
-
+    
       <div class="services-box">
-        <i class="fa-solid fa-dna"></i>
+        <i class="fa-solid fa-globe"></i>
         <h3>Smart Contract</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi temporibus nisi aperiam aliquid ex pariatur ea placeat asperiores deleniti omnis.</p>
-        <a href="#" class="btn">Read more</a>
+        <p>Building secure and efficient blockchain-based smart contracts for Web3 applications.</p></p>
+        <a href="javascript:void(0);" class="btn" onclick="openPopup('popup4')">Read more</a>
       </div>
-
+    
       <div class="services-box">
-        <i class="fa-solid fa-dna"></i>
-        <h3>Wordpress Development</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi temporibus nisi aperiam aliquid ex pariatur ea placeat asperiores deleniti omnis.</p>
-        <a href="#" class="btn">Read more</a>
+        <i class="fa-brands fa-wordpress"></i>
+        <h3>WordPress Development</h3>
+        <p>Designing feature-rich, scalable, and SEO-optimized WordPress websites.</p>
+        <a href="javascript:void(0);" class="btn" onclick="openPopup('popup5')">Read more</a>
+      </div>
+    </div>
+
+    <!-- Pop-up Dialogs -->
+    <div id="popup1" class="popup">
+      <div class="popup-content">
+        <span class="close" onclick="closePopup('popup1')">&times;</span>
+        <i class="fa-solid fa-code"></i>
+        <h3>Web Development</h3>
+        <p>
+          I specialize in crafting visually appealing and highly functional websites using HTML, CSS, JavaScript, and frameworks like React and Next.js. Whether it's a corporate website, a personal portfolio, or an e-commerce platform, I ensure it is responsive, fast, and scalable.
+        </p>
+      </div>
+    </div>
+
+    <div id="popup2" class="popup">
+      <div class="popup-content">
+        <span class="close" onclick="closePopup('popup2')">&times;</span>
+        <h3>Product Management</h3>
+        <p>
+          As a product manager, I bridge the gap between technology and business strategy. I handle product roadmaps, feature prioritization, and collaborate with cross-functional teams to ensure product-market fit. My approach is data-driven and user-centric to create impactful products.
+        </p>
+      </div>
+    </div>
+
+    <div id="popup3" class="popup">
+      <div class="popup-content">
+        <span class="close" onclick="closePopup('popup3')">&times;</span>
+        <h3>Virtual Assistance</h3>
+        <p>
+          Offering professional administrative, customer support, and organizational services. I help businesses manage emails, scheduling, data entry, and research tasks, ensuring smooth day-to-day operations.
+        </p>
+      </div>
+    </div>
+
+    <div id="popup4" class="popup">
+      <div class="popup-content">
+        <span class="close" onclick="closePopup('popup4')">&times;</span>
+        <h3>Smart Contract</h3>
+        <p>
+          Expert in developing secure and optimized smart contracts on blockchain platforms like Ethereum and Solana. I write Solidity and Rust-based contracts, ensuring they are gas-efficient, bug-free, and align with decentralized applications' (DApps) needs.
+        </p>
+      </div>
+    </div>
+
+    <div id="popup5" class="popup">
+      <div class="popup-content">
+        <span class="close" onclick="closePopup('popup5')">&times;</span>
+        <h3>WordPress Development</h3>
+        <p>
+          Creating high-quality WordPress websites tailored to your needs. From custom themes to plugin integration and SEO optimization, I ensure your site is engaging, functional, and ready for growth.
+        </p>
       </div>
     </div>
   </section>
@@ -183,8 +235,7 @@
       </div>
     </div>
   </section>
-
-
+  
   <!-- #################### -->
   <section class="contact" id="contact">
     <h2 class="heading">Contact <span>Me</span></h2>
