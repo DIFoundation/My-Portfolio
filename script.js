@@ -108,3 +108,29 @@ function closePopup(id) {
 const currentYear = new Date().getFullYear();
 // Set the text content of the element with id "currentYear" to the current
 document.getElementById("CurrentYear").textContent = currentYear;
+
+const form = document.getElementById('contact-form');
+const successMessage = document.getElementById('success-message');
+
+form.addEventListener('submit', function (e) {
+  e.preventDefault(); // Stop default form submission
+
+  const formData = new FormData(form);
+
+  fetch(form.action, {
+    method: "POST",
+    body: formData,
+    headers: {
+      'Accept': 'application/json'
+    }
+  }).then(response => {
+    if (response.ok) {
+      form.reset(); // Clear the form
+      successMessage.style.display = 'block'; // Show success message
+    } else {
+      alert('Oops! Something went wrong.');
+    }
+  }).catch(error => {
+    alert('There was an error sending your message.');
+  });
+});
