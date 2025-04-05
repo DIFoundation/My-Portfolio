@@ -142,7 +142,7 @@ span {
   box-shadow: 0 0 1rem var(--main-color);
 }
 
-.btn {
+.btn1 {
   display: inline-block;
   padding: 1rem 2.8rem;
   background: var(--main-color);
@@ -155,7 +155,20 @@ span {
   transition: .5s ease;
 }
 
-.btn:hover {
+.btn2 {
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  border-radius: 4rem;
+  box-shadow: 0 0 1rem var(--main-color);
+  font-size: 1.6rem;
+  color: var(--main-color);
+  letter-spacing: .1rem;
+  font-weight: 600;
+  transition: .5s ease;
+  margin-left: 2rem;
+}
+
+.btn1:hover, .btn2:hover {
   box-shadow: none;
 }
 
