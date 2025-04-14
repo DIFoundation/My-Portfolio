@@ -355,11 +355,11 @@ span {
 }
 
 .portfolio-layer h4 {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .portfolio-layer p {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   margin: .3rem 0 1rem;
 }
 
@@ -377,7 +377,7 @@ span {
   background: var(--text-color);
   color: var(--bg-color);
   border-radius: 10px;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   padding: .5rem 1rem;
   margin: 1rem 0;
 }
