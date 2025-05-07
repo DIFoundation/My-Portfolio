@@ -1,300 +1,349 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <link rel="stylesheet" href="style.css">
-  <title>Adeniran Ibrahim Adewale | Profile</title>
-  <link rel="icon" href="Assets/images/profile-logo.jpg" type="image/x-icon">
-</head>
-<body>
-  <hesder class="header">
-    <a href="#" class="logo">I.A ADENIRAN</a>
+    <link rel="stylesheet" href="style.css" />
+    <title>Adeniran Ibrahim Adewale | Profile</title>
+    <link
+      rel="icon"
+      href="Assets/images/profile-logo.jpg"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <hesder class="header">
+      <a href="#" class="logo">I.A ADENIRAN</a>
 
-    <i class="fa-solid fa-bars " id="menu-icon"></i>
+      <i class="fa-solid fa-bars" id="menu-icon"></i>
 
-    <nav class="navbar">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </hesder>
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </hesder>
 
-
-  <section class="home" id="home">
-    <div class="home-content">
-      <h3>Hi, I am</h3>
-      <h1>Adeniran Ibrahim</h1>
-      <h3>And I'm a <span id="skills">Developer</span></h3>
-      <p>
-        Result-driven software engineer with expertise in Frontend development, Smart contract engineering, Product manager & Virtual assistance. Passionate about building scalable web applications and working with cross-functional teams to deliver high-quality software solutions.
-      </p>
-
-      <div class="social-media">
-        <a href="https://github.com/DIFoundation/" target="_blank"><i class="fa-brands fa-github"></i></a>
-        <a href="https://x.com/Real_Adeniran/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-        <a href="mailto:adeniranibrahim165@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
-        <a href="https://www.linkedin.com/in/adeniran-ibrahim-adewale/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-      </div>
-
-      <a href="Assets/CV/IBRAHIM-ADENIRAN.pdf" class="btn" download target="_blank" rel="noopener noreferrer">Download CV</a>
-      <a href="mailto:adeniranibrahim165@gmail.com" class="btn secondBtn" download target="_blank">Hire Me</a>
-    </div>
-
-    <div class="home-img">
-      <img src="Assets/images/profile-logo.jpg" alt="Home Image">
-    </div>
-  </section>
-
-
-
-  <!-- ###########this is about me##### -->
-  <section class="about" id="about">
-    <div class="about-img">
-      <img src="Assets/images/developer.jpg" alt="About Image">
-    </div>
-
-    <div class="about-content">
-      <h2 class="heading">About <span>Me</span></h2>
-      <h3>Frontend Developer</h3>
-      <p>
-        A Frontend/Smart Contract Developer with expertise in building scalable web applications and working with cross-functional teams to deliver high-quality software solutions.</br></br>
-        <span id="moreText" style="display: none; color: #fff;">
-        Proficient in HTML, CSS, JavaScript, React, Next.js, and various other technologies. 
-        Passionate about building scalable web applications and working with cross-functional teams to deliver high-quality software solutions. </br></br>
-        Proficient in HTML, CSS, JavaScript, Strong problem-solving skills and a commitment to continuous learning and improvement.
-      </span>
-      </p>
-      <a href="javascript:void(0);" class="btn" onclick="toggleText()" id="toggleBtn">Read more</a>
-    </div>
-  </section>
-
-
-
-  <!-- ################# -->
-  <section class="services" id="services">
-    <h2 class="heading">My <span>Services</span></h2>
-
-    <div class="services-container">
-      <div class="services-box">
-        <i class="fa-solid fa-code"></i>
-        <h3>Web Development</h3>
-        <p>Crafting modern, responsive, and high-performance websites using cutting-edge technologies.</p>
-        <a href="javascript:void(0);" class="btn" onclick="openPopup('popup1')">Read more</a>
-      </div>
-    
-      <div class="services-box">
-        <i class="fa-solid fa-list-check"></i>
-        <h3>Product Management</h3>
-        <p>Transforming ideas into successful products through strategic planning and execution.</p>
-        <a href="javascript:void(0);" class="btn" onclick="openPopup('popup2')">Read more</a>
-      </div>
-    
-      <div class="services-box">
-        <i class="fa-solid fa-headset"></i>
-        <h3>Virtual Assistance</h3>
-        <p>Efficient remote assistance to streamline business operations and enhance productivity.</p>
-        <a href="javascript:void(0);" class="btn" onclick="openPopup('popup3')">Read more</a>
-      </div>
-    
-      <div class="services-box">
-        <i class="fa-solid fa-globe"></i>
-        <h3>Smart Contract</h3>
-        <p>Building secure and efficient blockchain-based smart contracts for Web3 applications.</p></p>
-        <a href="javascript:void(0);" class="btn" onclick="openPopup('popup4')">Read more</a>
-      </div>
-    
-      <div class="services-box">
-        <i class="fa-brands fa-wordpress"></i>
-        <h3>WordPress Development</h3>
-        <p>Designing feature-rich, scalable, and SEO-optimized WordPress websites.</p>
-        <a href="javascript:void(0);" class="btn" onclick="openPopup('popup5')">Read more</a>
-      </div>
-    </div>
-
-    <!-- Pop-up Dialogs -->
-    <div id="popup1" class="popup">
-      <div class="popup-content">
-        <span class="close" onclick="closePopup('popup1')">&times;</span>
-        <i class="fa-solid fa-code"></i>
-        <h3>Web Development</h3>
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hi, I am</h3>
+        <h1>Adeniran Ibrahim</h1>
+        <h3>And I'm a <span id="skills">Developer</span></h3>
         <p>
-          I specialize in crafting visually appealing and highly functional websites using HTML, CSS, JavaScript, and frameworks like React and Next.js. Whether it's a corporate website, a personal portfolio, or an e-commerce platform, I ensure it is responsive, fast, and scalable.
+          Result-driven software engineer with expertise in Frontend
+          development, Smart contract engineering, Product manager & Virtual
+          assistance. Passionate about building scalable web applications and
+          working with cross-functional teams to deliver high-quality software
+          solutions.
         </p>
-      </div>
-    </div>
 
-    <div id="popup2" class="popup">
-      <div class="popup-content">
-        <span class="close" onclick="closePopup('popup2')">&times;</span>
-        <i class="fa-solid fa-list-check"></i>
-        <h3>Product Management</h3>
+        <div class="social-media">
+          <a href="https://github.com/DIFoundation/" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="https://x.com/Real_Adeniran/" target="_blank"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a href="mailto:adeniranibrahim165@gmail.com" target="_blank"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/adeniran-ibrahim-adewale/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+        </div>
+
+        <a
+          href="Assets/CV/IBRAHIM-ADENIRAN.pdf"
+          class="btn"
+          download
+          target="_blank"
+          rel="noopener noreferrer"
+          >Download CV</a
+        >
+        <a
+          href="mailto:adeniranibrahim165@gmail.com"
+          class="btn secondBtn"
+          download
+          target="_blank"
+          >Hire Me</a
+        >
+      </div>
+
+      <div class="home-img">
+        <img src="Assets/images/profile-logo.jpg" alt="Home Image" />
+      </div>
+    </section>
+
+    <!-- ###########this is about me##### -->
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="Assets/images/developer.jpg" alt="About Image" />
+      </div>
+
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>Frontend Developer</h3>
         <p>
-          As a product manager, I bridge the gap between technology and business strategy. I handle product roadmaps, feature prioritization, and collaborate with cross-functional teams to ensure product-market fit. My approach is data-driven and user-centric to create impactful products.
+          A Frontend/Smart Contract Developer with expertise in building
+          scalable web applications and working with cross-functional teams to
+          deliver high-quality software solutions.<br /><br />
+          <span id="moreText" style="display: none; color: #fff">
+            Proficient in HTML, CSS, JavaScript, React, Next.js, and various
+            other technologies. Passionate about building scalable web
+            applications and working with cross-functional teams to deliver
+            high-quality software solutions. <br /><br />
+            Proficient in HTML, CSS, JavaScript, Strong problem-solving skills
+            and a commitment to continuous learning and improvement.
+          </span>
         </p>
+        <a
+          href="javascript:void(0);"
+          class="btn"
+          onclick="toggleText()"
+          id="toggleBtn"
+          >Read more</a
+        >
       </div>
-    </div>
+    </section>
 
-    <div id="popup3" class="popup">
-      <div class="popup-content">
-        <span class="close" onclick="closePopup('popup3')">&times;</span>
-        <i class="fa-solid fa-headset"></i>
-        <h3>Virtual Assistance</h3>
-        <p>
-          Offering professional administrative, customer support, and organizational services. I help businesses manage emails, scheduling, data entry, and research tasks, ensuring smooth day-to-day operations.
-        </p>
-      </div>
-    </div>
+    <!-- ################# -->
+    <section class="services" id="services">
+      <h2 class="heading">My <span>Services</span></h2>
 
-    <div id="popup4" class="popup">
-      <div class="popup-content">
-        <span class="close" onclick="closePopup('popup4')">&times;</span>
-        <i class="fa-solid fa-globe"></i>
-        <h3>Smart Contract</h3>
-        <p>
-          Expert in developing secure and optimized smart contracts on blockchain platforms like Ethereum and Solana. I write Solidity and Rust-based contracts, ensuring they are gas-efficient, bug-free, and align with decentralized applications' (DApps) needs.
-        </p>
-      </div>
-    </div>
-
-    <div id="popup5" class="popup">
-      <div class="popup-content">
-        <span class="close" onclick="closePopup('popup5')">&times;</span>
-        <i class="fa-brands fa-wordpress"></i>
-        <h3>WordPress Development</h3>
-        <p>
-          Creating high-quality WordPress websites tailored to your needs. From custom themes to plugin integration and SEO optimization, I ensure your site is engaging, functional, and ready for growth.
-        </p>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ##################### -->
-  <section class="portfolio" id="portfolio">
-    <h2 class="heading">Latest <span>Projects</span></h2>
-
-    <div class="portfolio-container">
-
-      <div class="portfolio-box">
-        <img src="Assets/images/project4.png" alt="#">
-
-        <div class="portfolio-layer">
-          <h4>Get MyCar Parked</h4>
+      <div class="services-container">
+        <div class="services-box">
+          <i class="fa-solid fa-code"></i>
+          <h3>Web Development</h3>
           <p>
-            A parking system that allows users to book a parking space for secure parking with payment according to the car size.
+            Crafting modern, responsive, and high-performance websites using
+            cutting-edge technologies.
           </p>
-          <div class="project-check">
-            <a href="https://github.com/DIFoundation/get-mycar-parked">Code Repo</a>
-            <a href="https://get-mycar-parked.vercel.app/">View Project</a>
-          </div>
+          <a
+            href="javascript:void(0);"
+            class="btn"
+            onclick="openPopup('popup1')"
+            >Read more</a
+          >
+        </div>
+
+        <div class="services-box">
+          <i class="fa-solid fa-list-check"></i>
+          <h3>Product Management</h3>
+          <p>
+            Transforming ideas into successful products through strategic
+            planning and execution.
+          </p>
+          <a
+            href="javascript:void(0);"
+            class="btn"
+            onclick="openPopup('popup2')"
+            >Read more</a
+          >
+        </div>
+
+        <div class="services-box">
+          <i class="fa-solid fa-headset"></i>
+          <h3>Virtual Assistance</h3>
+          <p>
+            Efficient remote assistance to streamline business operations and
+            enhance productivity.
+          </p>
+          <a
+            href="javascript:void(0);"
+            class="btn"
+            onclick="openPopup('popup3')"
+            >Read more</a
+          >
+        </div>
+
+        <div class="services-box">
+          <i class="fa-solid fa-globe"></i>
+          <h3>Smart Contract</h3>
+          <p>
+            Building secure and efficient blockchain-based smart contracts for
+            Web3 applications.
+          </p>
+          <a
+            href="javascript:void(0);"
+            class="btn"
+            onclick="openPopup('popup4')"
+            >Read more</a
+          >
+        </div>
+
+        <div class="services-box">
+          <i class="fa-brands fa-wordpress"></i>
+          <h3>WordPress Development</h3>
+          <p>
+            Designing feature-rich, scalable, and SEO-optimized WordPress
+            websites.
+          </p>
+          <a
+            href="javascript:void(0);"
+            class="btn"
+            onclick="openPopup('popup5')"
+            >Read more</a
+          >
         </div>
       </div>
 
-      <div class="portfolio-box">
-        <img src="Assets/images/project3.png" alt="#">
-
-        <div class="portfolio-layer">
-          <h4>Techversity</h4>
+      <!-- Pop-up Dialogs -->
+      <div id="popup1" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup('popup1')">&times;</span>
+          <i class="fa-solid fa-code"></i>
+          <h3>Web Development</h3>
           <p>
-            A learning management system (LMS) that provides a platform for users to learn and earn certificates. It also has a payment system that allows users to pay for their courses using five different currency of choice.
+            I specialize in crafting visually appealing and highly functional
+            websites using HTML, CSS, JavaScript, and frameworks like React and
+            Next.js. Whether it's a corporate website, a personal portfolio, or
+            an e-commerce platform, I ensure it is responsive, fast, and
+            scalable.
           </p>
-          <div class="project-check">
-            <a href="https://github.com/DIFoundation/techversity">Code Repo</a>
-            <a href="https://techversitylms.vercel.app/">View Project</a>
-          </div>
         </div>
       </div>
 
-      <div class="portfolio-box">
-        <img src="Assets/images/project2.png" alt="#">
-
-        <div class="portfolio-layer">
-          <h4>Kyobi Hotel</h4>
+      <div id="popup2" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup('popup2')">&times;</span>
+          <i class="fa-solid fa-list-check"></i>
+          <h3>Product Management</h3>
           <p>
-            An hotel system to manage booking and checking out of rooms. It also has a payment system that allows users to pay for their booking using XFI token.
+            As a product manager, I bridge the gap between technology and
+            business strategy. I handle product roadmaps, feature
+            prioritization, and collaborate with cross-functional teams to
+            ensure product-market fit. My approach is data-driven and
+            user-centric to create impactful products.
           </p>
-          <div class="project-check">
-            <a href="https://github.com/DIFoundation/kyobihotel">Code Repo</a>
-            <a href="https://kyobihotel.vercel.app/">View Project</a>
-          </div>
         </div>
       </div>
 
-      <div class="portfolio-box">
-        <img src="Assets/images/project1.png" alt="#">
-
-        <div class="portfolio-layer">
-          <h4>Verses Generator</h4>
+      <div id="popup3" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup('popup3')">&times;</span>
+          <i class="fa-solid fa-headset"></i>
+          <h3>Virtual Assistance</h3>
           <p>
-            An API interactive website that randomly generte Quran & Bible Verses and their meaning together with the chapter they belongs and it's verse number.
+            Offering professional administrative, customer support, and
+            organizational services. I help businesses manage emails,
+            scheduling, data entry, and research tasks, ensuring smooth
+            day-to-day operations.
           </p>
-          <div class="project-check">
-            <a href="https://github.com/DIFoundation/quran-bible-generator">Code Repo</a>
-            <a href="https://quran-bible-generator.vercel.app/">View Project</a>
-          </div>
         </div>
-      </div>     
-    </div>
-  </section>
-  
-  <!-- #################### -->
-  <section class="contact" id="contact">
-    <h2 class="heading">Contact <span>Me</span></h2>
-
-    <form id="contact-form" action="https://formsubmit.co/adeniranibrahim165@gmail.com" method="POST">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_template" value="box">
-      <input type="hidden" name="_next" value="#">
-      
-      <div class="input-box">
-        <input type="text" name="name" placeholder="Full Name">
       </div>
 
-      <div class="input-box">
-        <input type="email" name="email" id="" placeholder="Email Address">
-        <input type="text" name="_subject" value="" placeholder="Subject">
-      
+      <div id="popup4" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup('popup4')">&times;</span>
+          <i class="fa-solid fa-globe"></i>
+          <h3>Smart Contract</h3>
+          <p>
+            Expert in developing secure and optimized smart contracts on
+            blockchain platforms like Ethereum and Solana. I write Solidity and
+            Rust-based contracts, ensuring they are gas-efficient, bug-free, and
+            align with decentralized applications' (DApps) needs.
+          </p>
+        </div>
       </div>
 
-      <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-      <input type="submit" value="Send Message" class="btn">
-    </form>
-
-    <div id="success-message" class="popup" style="display: none; color: green; margin-top: 15px; font-weight: bold;">
-      <div class="popup-content">
-        <span class="close" onclick="closePopup('success-message')">&times;</span>
-        <i class="fa-solid fa-thumbs-up"></i>
-        <h3 style="color: #fff;">
-          Message sent successfully! Thank you for reaching out.
-        </h3>
+      <div id="popup5" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup('popup5')">&times;</span>
+          <i class="fa-brands fa-wordpress"></i>
+          <h3>WordPress Development</h3>
+          <p>
+            Creating high-quality WordPress websites tailored to your needs.
+            From custom themes to plugin integration and SEO optimization, I
+            ensure your site is engaging, functional, and ready for growth.
+          </p>
+        </div>
       </div>
-      
-    </div>
-  </section>
+    </section>
 
+    <!-- ##################### -->
+    <section class="portfolio" id="portfolio">
+      <h2 class="heading">Latest <span>Projects</span></h2>
+      <div class="portfolio-container" id="project"></div>
+    </section>
 
-  <!-- ################### -->
-  <footer class="footer">
-    <div class="footer-text">
-      <p>
-        Copyright &copy; <span id="CurrentYear"></span> by Ibrahim A. Adeniran | All Right Reserved.
-      </p>
-    </div>
+    <!-- ##########CONTACT########## -->
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me</span></h2>
 
-    <div class="footer-iconTop">
-      <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
-    </div>
-  </footer>
+      <form
+        id="contact-form"
+        action="https://formsubmit.co/adeniranibrahim165@gmail.com"
+        method="POST"
+      >
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_template" value="box" />
+        <input type="hidden" name="_next" value="#" />
 
+        <div class="input-box">
+          <input type="text" name="name" placeholder="Full Name" />
+        </div>
 
-  <script src="https://unpkg.com/scrollreveal"></script>
+        <div class="input-box">
+          <input type="email" name="email" id="" placeholder="Email Address" />
+          <input type="text" name="_subject" value="" placeholder="Subject" />
+        </div>
 
-  <script src="script.js"></script>
-</body>
+        <textarea
+          name="message"
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Your Message"
+        ></textarea>
+        <input type="submit" value="Send Message" class="btn" />
+      </form>
+
+      <div
+        id="success-message"
+        class="popup"
+        style="display: none; color: green; margin-top: 15px; font-weight: bold"
+      >
+        <div class="popup-content">
+          <span class="close" onclick="closePopup('success-message')"
+            >&times;</span
+          >
+          <i class="fa-solid fa-thumbs-up"></i>
+          <h3 style="color: #fff">
+            Message sent successfully! Thank you for reaching out.
+          </h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- #########FOOTER########## -->
+    <footer class="footer">
+      <div class="footer-text">
+        <p>
+          Copyright &copy; <span id="CurrentYear"></span> by Ibrahim A. Adeniran
+          | All Right Reserved.
+        </p>
+      </div>
+
+      <div class="footer-iconTop">
+        <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="script.js"></script>
+  </body>
 </html>

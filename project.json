@@ -1,0 +1,47 @@
+[
+  {
+    "image": "Assets/images/project5.png",
+    "title": "Jerry Concept Organization",
+    "description": "A webpage for a cyber cafe to showcase services, pricing, and contact information. It includes a booking system for appointments and a payment system for services.",
+    "link": {
+      "repo": "https://github.com/DIFoundation/jerry-concept-org",
+      "website": "https://jerry-concept.vercel.app/"
+    }
+  },
+  {
+    "image": "Assets/images/project4.png",
+    "title": "Get MyCar Parked",
+    "description": "A parking system that allows users to book a parking space for secure parking with payment according to the car size.",
+    "link": {
+      "repo": "https://github.com/DIFoundation/get-mycar-parked",
+      "website": "https://get-mycar-parked.vercel.app/"
+    }
+  },
+  {
+    "image": "Assets/images/project3.png",
+    "title": "Techversity",
+    "description": "A learning management system (LMS) that provides a platform for users to learn and earn certificates. It also has a payment system that allows users to pay for their courses using five different currency of choice.",
+    "link": {
+      "repo": "https://github.com/DIFoundation/techversity",
+      "website": "https://techversitylms.vercel.app/"
+    }
+  },
+  {
+    "image": "Assets/images/project2.png",
+    "title": "Kyobi Hotel",
+    "description": "An hotel system to manage booking and checking out of rooms. It also has a payment system that allows users to pay for their booking using XFI token.",
+    "link": {
+      "repo": "https://github.com/DIFoundation/kyobihotel",
+      "website": "https://kyobihotel.vercel.app/"
+    }
+  },
+  {
+    "image": "Assets/images/project1.png",
+    "title": "Verses Generator",
+    "description": "An API interactive website that randomly generte Quran & Bible Verses and their meaning together with the chapter they belongs and it's verse number.",
+    "link": {
+      "repo": "https://github.com/DIFoundation/quran-bible-generator",
+      "website": "https://quran-bible-generator.vercel.app/"
+    }
+  }
+]

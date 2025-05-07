@@ -2,9 +2,9 @@ let menuIcon = document.querySelector("#menu-icon");
 let navbar = document.querySelector(".navbar");
 
 menuIcon.onclick = () => {
-    menuIcon.classList.toggle("fa-xmark");
-    navbar.classList.toggle("active")
-}
+  menuIcon.classList.toggle("fa-xmark");
+  navbar.classList.toggle("active");
+};
 
 let sections = document.querySelectorAll("section");
 let navLinks = document.querySelectorAll("header nav a");
@@ -12,7 +12,7 @@ let navLinks = document.querySelectorAll("header nav a");
 window.addEventListener("scroll", () => {
   let current = "";
   let offset = 150;
-  sections.forEach(sec => {
+  sections.forEach((sec) => {
     let top = window.scrollY;
     let offsetTop = sec.offsetTop - offset;
     let offsetBottom = offsetTop + sec.offsetHeight;
@@ -21,7 +21,7 @@ window.addEventListener("scroll", () => {
     }
   });
 
-  navLinks.forEach(link => {
+  navLinks.forEach((link) => {
     link.classList.remove("active");
     if (link.getAttribute("href") === "#" + current) {
       link.classList.add("active");
@@ -33,17 +33,26 @@ window.addEventListener("scroll", () => {
 });
 
 ScrollReveal({
-    distance: "80px",
-    duration: 2000,
-    delay: 200,
+  distance: "80px",
+  duration: 2000,
+  delay: 200,
 }).reveal(".reveal");
 
 ScrollReveal().reveal(".home-content, heading", { origin: "top" });
-ScrollReveal().reveal(".home-img, .services-container, .portfolio-box, .contact form", { origin: "bottom" });
+ScrollReveal().reveal(
+  ".home-img, .services-container, .portfolio-box, .contact form",
+  { origin: "bottom" }
+);
 ScrollReveal().reveal(".home-contact hi, .about-img", { origin: "left" });
 ScrollReveal().reveal(".home-contact p, .about-content", { origin: "right" });
 
-const words = ["Frontend Developer", "Smart Contract Developer", "Product Manager", "Wordpress Developer", "Virtual Assistence"];
+const words = [
+  "Frontend Developer",
+  "Smart Contract Developer",
+  "Product Manager",
+  "Wordpress Developer",
+  "Virtual Assistence",
+];
 
 let index = 0;
 let letterIndex = 0;
@@ -55,7 +64,7 @@ function type() {
   const text = word.substring(0, letterIndex + 1, "|");
 
   document.getElementById("skills").textContent = text;
- 
+
   if (!isDeleting) {
     letterIndex++;
   } else {
@@ -80,7 +89,7 @@ function type() {
   setTimeout(type, typingSpeed);
 }
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   setTimeout(type, typingSpeed);
 });
 
@@ -106,13 +115,12 @@ function closePopup(id) {
 }
 // Get the current year
 const currentYear = new Date().getFullYear();
-// Set the text content of the element with id "currentYear" to the current
 document.getElementById("CurrentYear").textContent = currentYear;
 
-const form = document.getElementById('contact-form');
-const successMessage = document.getElementById('success-message');
+const form = document.getElementById("contact-form");
+const successMessage = document.getElementById("success-message");
 
-form.addEventListener('submit', function (e) {
+form.addEventListener("submit", function (e) {
   e.preventDefault(); // Stop default form submission
 
   const formData = new FormData(form);
@@ -121,16 +129,47 @@ form.addEventListener('submit', function (e) {
     method: "POST",
     body: formData,
     headers: {
-      'Accept': 'application/json'
-    }
-  }).then(response => {
-    if (response.ok) {
-      form.reset(); // Clear the form
-      successMessage.style.display = 'block'; // Show success message
-    } else {
-      alert('Oops! Something went wrong.');
-    }
-  }).catch(error => {
-    alert('There was an error sending your message.');
-  });
+      Accept: "application/json",
+    },
+  })
+    .then((response) => {
+      if (response.ok) {
+        form.reset(); // Clear the form
+        successMessage.style.display = "block"; // Show success message
+      } else {
+        alert("Oops! Something went wrong.");
+      }
+    })
+    .catch((error) => {
+      alert("There was an error sending your message.");
+    });
 });
+
+// Fecth data from JSON file
+fetch("project.json")
+  .then((response) => response.json())
+  .then((data) => {
+    const skillsContainer = document.getElementById("project");
+
+    data.forEach((skill) => {
+      const skillItem = document.createElement("div");
+      skillItem.className = "portfolio-box";
+
+      skillItem.innerHTML = `
+        <img src="${skill.image}" alt="${skill.name}">
+        <div class="portfolio-layer">
+          <h4>${skill.title}</h4>
+          <p>${skill.description}</p>
+          <div class="project-check">
+            <a href="${skill.link.repo}" target="_blank">Code Repo</a>
+            <a href="${skill.link.website}" target="_blank">View Project</a>
+          </div>
+        </div>`;
+
+        console.log(skillItem);
+        
+
+      skillsContainer.appendChild(skillItem);
+    });
+  })
+  .catch((error) => console.error("Error fetching skills data:", error));
