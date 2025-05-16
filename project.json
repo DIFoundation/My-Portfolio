@@ -1,5 +1,14 @@
 [
   {
+    "image": "Assets/images/project6.png",
+    "title": "Cartify",
+    "description": "A functional shopping cart with coupon discounts and persistent storage.",
+    "link": {
+      "repo": "https://github.com/DIFoundation/cartify",
+      "website": "https://cartify-omega.vercel.app/"
+    }
+  },
+  {
     "image": "Assets/images/project5.png",
     "title": "Jerry Concept Organization",
     "description": "A webpage for a cyber cafe to showcase services, pricing, and contact information. It includes a booking system for appointments and a payment system for services.",

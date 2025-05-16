@@ -165,10 +165,6 @@ fetch("project.json")
             <a href="${skill.link.website}" target="_blank">View Project</a>
           </div>
         </div>`;
-
-        console.log(skillItem);
-        
-
       skillsContainer.appendChild(skillItem);
     });
   })
